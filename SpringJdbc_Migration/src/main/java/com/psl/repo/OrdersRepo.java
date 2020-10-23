@@ -25,6 +25,7 @@ class OrderMapper implements RowMapper<Orders> {
 		order.setStauts(resultSet.getString("stauts"));
 		order.setComment(resultSet.getString("comment"));
 		order.setCustNumber(resultSet.getString("cust_number"));
+		
      return order;
  }        
 }

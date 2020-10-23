@@ -19,7 +19,6 @@ public class OrderDetails {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="order_number")
 	private String orderNumber;
-	
 	@Column(name="product_code")
 	private String productCode;
 	private Integer quantityOrder;
