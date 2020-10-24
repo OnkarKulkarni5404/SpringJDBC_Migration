@@ -54,7 +54,7 @@ public class ProductController {
 		service.deleteById(id);
 	}
 	
-	
+	@GetMapping("/saveall")
 	public String saveall()
 	{
 		/*String productCode, String productName, String productVendor, Integer quantityInStock,
