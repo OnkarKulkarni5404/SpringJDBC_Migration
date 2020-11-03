@@ -11,9 +11,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Orders {
 
 	@Id
-	private String OrderNumber;
+	private String orderNumber;
 	
-	private Date OrderDate;
+	private Date orderDate;
 	private Date reqDate;
 	private Date shippedDate;
 	private String stauts;
@@ -25,15 +25,15 @@ public class Orders {
 	public Orders() {}	
 
 	public Orders(String orderNumber,String custNumber) {
-		this.OrderNumber=orderNumber;
+		this.orderNumber=orderNumber;
 		this.custNumber=custNumber;
 	}
 	
 	public Orders(String orderNumber, Date orderDate, Date reqDate, Date shippedDate, String stauts, String comment,
 			String custNumber) {
 		super();
-		this.OrderNumber = orderNumber;
-		this.OrderDate = orderDate;
+		this.orderNumber = orderNumber;
+		this.orderDate = orderDate;
 		this.reqDate = reqDate;
 		this.shippedDate = shippedDate;
 		this.stauts = stauts;
@@ -41,16 +41,16 @@ public class Orders {
 		this.custNumber = custNumber;
 	}
 	public String getOrderNumber() {
-		return OrderNumber;
+		return orderNumber;
 	}
 	public void setOrderNumber(String orderNumber) {
-		OrderNumber = orderNumber;
+		orderNumber = orderNumber;
 	}
 	public Date getOrderDate() {
-		return OrderDate;
+		return orderDate;
 	}
 	public void setOrderDate(Date orderDate) {
-		OrderDate = orderDate;
+		orderDate = orderDate;
 	}
 	public Date getReqDate() {
 		return reqDate;
@@ -85,8 +85,8 @@ public class Orders {
 
 	@Override
 	public String toString() {
-		return "Orders [OrderNumber=" + OrderNumber + ", OrderDate="
-				+ OrderDate + ", reqDate=" + reqDate + ", shippedDate="
+		return "Orders [OrderNumber=" + orderNumber + ", OrderDate="
+				+ orderDate + ", reqDate=" + reqDate + ", shippedDate="
 				+ shippedDate + ", stauts=" + stauts + ", comment=" + comment
 				+ ", custNumber=" + custNumber + "]";
 	}

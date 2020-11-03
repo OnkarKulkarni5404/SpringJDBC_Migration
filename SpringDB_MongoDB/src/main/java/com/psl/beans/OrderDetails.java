@@ -1,6 +1,7 @@
 package com.psl.beans;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "order_details")
@@ -9,6 +10,7 @@ public class OrderDetails {
 
 	@Id
 	private String orderNumber;
+	
 	private String productCode;
 	private Integer quantityOrder;
 	private Float priceEach;

@@ -59,7 +59,7 @@ public class OrderController {
 		service.deleteById(id);
 	}
 
-	/*		
+		
 	@GetMapping("/saveall")
 	public String saveAll()
 	{
@@ -79,6 +79,6 @@ public class OrderController {
 		return "All orders saved";	
 	}
 	
-*/
+
 	
 }
